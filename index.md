@@ -14,9 +14,10 @@ Analiza ruchu C2, identyfikacja zainfekowanego hosta (NBNS), enumeracja użytkow
 - [Writeup: C2 traffic & user enumeration via SAMR](https://github.com/apple337/malware_traffic/blob/main/2026-02-28-c2-samr-enum/writeup.md)
 - [Repozytorium](https://github.com/apple337/malware_traffic)
 
-### 🎯 TryHackMe
-Rozwiązane pokoje z zakresu exploitation, post-exploitation, web recon.
-- Writeup: *wkrótce*
+### 🎯 CTF / Security Wargames
+Rozwiązania wyzwań CTF i security wargames (TryHackMe i inne), z pełnymi writeupami.
+- [Writeup: Fools Mate — bypass walidacji JS przez API (Burp Suite)](https://github.com/apple337/ctf-writeups/blob/main/THM/fools_mate/writeup.md)
+- [Repozytorium](https://github.com/apple337/ctf-writeups)
 
 ## Kontakt
 - GitHub: [@apple337](https://github.com/apple337)

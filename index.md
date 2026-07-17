@@ -3,24 +3,21 @@ layout: home
 title: Home
 ---
 
-Cześć! Nazywam się Dawid, przechodzę do branży cybersecurity — nastawiony na role SOC Analyst / Junior Pentester (Purple Team).
+Cześć! Nazywam się Dawid — przechodzę do branży cybersecurity, nastawiony na role **SOC Analyst** / **Junior Penetration Tester** (Purple Team).
 
 ## Projekty
 
 ### 🛡️ SOC Home Lab (Wazuh SIEM)
-Domowy lab: Kali Linux (Red Team), Ubuntu victim i Wazuh SIEM (Blue Team) w izolowanej sieci. Pełny cykl: infrastruktura → instalacja Wazuh → agent → atak (nmap + hydra) → detekcja (reguły 5763/5551/40111/2502).
-- [Pełny writeup / README](https://github.com/apple337/wazuh-home-lab/blob/master/README.md)
-- [Repozytorium](https://github.com/apple337/wazuh-home-lab)
+Domowy lab: Kali Linux (Red Team), Ubuntu victim i Wazuh SIEM (Blue Team) w izolowanej sieci. Pełny cykl: infrastruktura → instalacja Wazuh → agent → atak (nmap + hydra) → detekcja.
+- [Pełny writeup](wazuh_lab/README.html)
 
 ### 🔍 Analiza ruchu sieciowego (pcap/Wireshark)
 Analiza ruchu C2, identyfikacja zainfekowanego hosta (NBNS), enumeracja użytkownika (Kerberos) i pełnych danych (SAMR QueryUserInfo).
-- [Writeup: C2 traffic & user enumeration via SAMR](https://github.com/apple337/malware_traffic/blob/main/2026-02-28-c2-samr-enum/writeup.md)
-- [Repozytorium](https://github.com/apple337/malware_traffic)
+- [Writeup: C2 traffic & user enumeration via SAMR](traffic_analysis/2026-02-28-c2-samr-enum/writeup.html)
 
 ### 🎯 CTF / Security Wargames
 Rozwiązania wyzwań CTF i security wargames (TryHackMe i inne), z pełnymi writeupami.
-- [Writeup: Fools Mate — bypass walidacji JS przez API (Burp Suite)](https://github.com/apple337/ctf-writeups/blob/main/THM/fools_mate/writeup.md)
-- [Repozytorium](https://github.com/apple337/ctf-writeups)
+- [Writeup: Fools Mate — bypass walidacji JS przez API (Burp Suite)](ctf_writeups/THM/fools_mate/writeup.html)
 
 ## Kontakt
 - GitHub: [@apple337](https://github.com/apple337)

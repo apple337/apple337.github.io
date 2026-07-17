@@ -4,3 +4,5 @@ description: >-
   home lab projects, network traffic analysis, and IT admin notes.
 theme: minima
 show_excerpts: true
+header_pages:
+    - index.md

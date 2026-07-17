@@ -1,0 +1,11 @@
+title: apple337 — Cybersecurity Portfolio
+description: >-
+  Portfolio Dawida Twardzika — SOC Analyst / Junior Penetration Tester (Purple Team).
+  Projekty, laby i writeupy z zakresu bezpieczeństwa.
+theme: minima
+
+# Menu na górze strony
+header_pages:
+  - index.md
+
+show_excerpts: false

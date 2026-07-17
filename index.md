@@ -1,6 +1,9 @@
-# apple337 — Cybersecurity Portfolio
+---
+layout: home
+title: Home
+---
 
-Cześć! Nazywam się apple337 i przechodzę do branży cybersecurity — nastawiony na role SOC Analyst / Junior Pentester (Purple Team).
+Cześć! Nazywam się Dawid, przechodzę do branży cybersecurity — nastawiony na role SOC Analyst / Junior Pentester (Purple Team).
 
 ## Projekty
 

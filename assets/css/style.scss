@@ -1,0 +1,182 @@
+---
+---
+
+@import "minima";
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* ===================================================== */
+/* ===============  MATRIX THEME  ======================= */
+/* ===================================================== */
+
+:root {
+  --matrix-green: #00ff41;
+  --matrix-green-dim: #008f11;
+  --matrix-green-glow: #00ff4180;
+  --bg: #000000;
+  --bg-card: #0a0f0a;
+  --border: #003b00;
+  --text: #c8ffc8;
+  --text-dim: #4d9c4d;
+}
+
+* {
+  font-family: 'Share Tech Mono', 'Courier New', monospace !important;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  text-shadow: 0 0 2px rgba(0, 255, 65, 0.35);
+  position: relative;
+}
+
+/* Canvas z efektem "spadającego kodu" (dodany w head-custom.html) */
+#matrix-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid var(--matrix-green-dim);
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.2);
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--matrix-green) !important;
+  font-weight: 700;
+  text-shadow: 0 0 8px var(--matrix-green-glow);
+  letter-spacing: 1px;
+}
+.site-title::after {
+  content: "_";
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.site-nav .page-link {
+  color: var(--text) !important;
+}
+.site-nav .page-link:hover {
+  color: var(--matrix-green) !important;
+  text-shadow: 0 0 6px var(--matrix-green-glow);
+}
+
+a {
+  color: var(--matrix-green);
+}
+a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px var(--matrix-green-glow);
+  text-decoration: underline;
+}
+
+.page-content {
+  background-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--matrix-green);
+  border-bottom: 1px solid var(--matrix-green-dim);
+  padding-bottom: 0.3rem;
+  text-shadow: 0 0 6px rgba(0, 255, 65, 0.4);
+}
+
+/* Karty postów na stronie głównej */
+.post-list > li {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.15s ease;
+}
+.post-list > li:hover {
+  border-color: var(--matrix-green);
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.25);
+}
+.post-list .post-link {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+.post-list .post-link:hover {
+  color: var(--matrix-green);
+}
+.post-meta {
+  color: var(--text-dim);
+}
+
+/* Bloki kodu */
+pre, code {
+  background-color: #000000;
+  border: 1px solid var(--matrix-green-dim);
+  border-radius: 4px;
+  color: var(--matrix-green);
+}
+code {
+  padding: 0.15em 0.4em;
+  text-shadow: none;
+}
+pre code {
+  border: none;
+  padding: 0;
+}
+
+/* Cytaty */
+blockquote {
+  border-left: 4px solid var(--matrix-green);
+  color: var(--text-dim);
+  background-color: var(--bg-card);
+  padding: 0.5rem 1rem;
+}
+
+/* Tabele */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table th, table td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.8rem;
+}
+table th {
+  background-color: var(--bg-card);
+  color: var(--matrix-green);
+}
+
+/* Obrazki w writeupach */
+.post-content img {
+  border-radius: 4px;
+  border: 1px solid var(--matrix-green-dim);
+  max-width: 100%;
+  filter: contrast(1.05);
+}
+
+.site-footer {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-top: 1px solid var(--matrix-green-dim);
+  color: var(--text-dim);
+}
+
+/* Scrollbar w klimacie */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--matrix-green-dim);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--matrix-green);
+}

@@ -20,4 +20,4 @@ Rozwiązane pokoje z zakresu exploitation, post-exploitation, web recon.
 
 ## Kontakt
 - GitHub: [@apple337](https://github.com/apple337)
-- LinkedIn: https://www.linkedin.com/in/dawid-twardzik-8a2854299
+- LinkedIn: [Dawid Twardzik](https://www.linkedin.com/in/dawid-twardzik-8a2854299/)

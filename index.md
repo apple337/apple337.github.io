@@ -18,7 +18,9 @@ Analiza ruchu C2, identyfikacja zainfekowanego hosta (NBNS), enumeracja użytkow
 ### 🎯 CTF / Security Wargames
 Rozwiązania wyzwań CTF i security wargames (TryHackMe i inne), z pełnymi writeupami.
 - [Writeup: Fools Mate — bypass walidacji JS przez API (Burp Suite)](ctf_writeups/THM/fools_mate/writeup.html)
+- [Writeup: NetSec Challenge — enumeracja (Nmap, Telnet) + brute-force FTP (Hydra)](ctf_writeups/THM/NetSec/netsec_challenge_writeup.html)
 
 ## Kontakt
 - GitHub: [@apple337](https://github.com/apple337)
 - LinkedIn: [Dawid Twardzik](https://www.linkedin.com/in/dawid-twardzik-8a2854299/)
+

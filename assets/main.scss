@@ -131,6 +131,30 @@ pre code {
   padding: 0;
 }
 
+/* Wrapper Rouge'a wokół bloków ```kod``` — domyślnie ma jasne tło, trzeba nadpisać */
+.highlight,
+.highlighter-rouge,
+.highlighter-rouge .highlight,
+div.highlight,
+figure.highlight {
+  background-color: #000000 !important;
+  border: 1px solid var(--matrix-green-dim);
+  border-radius: 4px;
+}
+.highlight pre {
+  border: none;
+  background-color: transparent;
+}
+/* Nadpisanie kolorów tokenów Rouge'a (domyślnie ciemne na jasnym tle) */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp,
+.highlight .n, .highlight .nb, .highlight .nf, .highlight .nx,
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb,
+.highlight .c, .highlight .c1, .highlight .cm,
+.highlight .o, .highlight .p, .highlight .mi, .highlight .mf {
+  color: var(--matrix-green) !important;
+  background: transparent !important;
+}
+
 /* Cytaty */
 blockquote {
   border-left: 4px solid var(--matrix-green);

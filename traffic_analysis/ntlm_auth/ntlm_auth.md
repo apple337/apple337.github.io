@@ -31,7 +31,7 @@ ntlmssp
 
 `NTLMSSP` (NT LAN Manager Security Support Provider) is the package that carries the NTLM challenge-response exchange inside SMB2, so this filter isolates exactly the three packets described above. For this task only two of them matter: the **challenge** packet and the **authentication** packet.
 
-![NTLMSSP challenge packet in Wireshark](screenshots/challenge.png)
+![NTLMSSP challenge packet in Wireshark](./challenge.png)
 
 ## Extracting the identity fields
 
@@ -40,12 +40,12 @@ The authentication packet (`NTLMSSP_AUTH`) exposes the account identity directly
 - **Username:** `john.doe`
 - **Domain name:** `catcorp.local`
 
-![Username and domain highlighted in the authentication packet](screenshots/ntlm-response.png)
+![Username and domain highlighted in the authentication packet](./ntlm-response.png)
 
 Alongside these, the same packet carries the two values needed to rebuild the hash:
 
 - **NTLM Server Challenge** (from the challenge packet): `1944952f5b845db1`
-- **NTLMv2 Response**: `01010000000000001a9790044b63da0175304c546c6f34320000000002000e0043004100540043004f005200500001000800440043003000310004001a0063006100740063006f00720070002e006c006f00630061006c000300240044004300300031002e0063006100740063006f00720070002e006c006f00630061006c0005001a0063006100740063006f00720070002e006c006f00630061006c00070008001a9790044b63da010900120063006900660073002f0044004300300031000000000000000000`
+- **NTLMv2 Response**: `01010000000000001a9790044b63da0175304c546c6f34320000000002000e00430041005006f00630061006c00070008001a9790044b63da010900120063006900660073002f0044004300300031000000000000000000`
 
 ## Extracting the HMAC-MD5 (NT Proof String)
 
@@ -53,7 +53,7 @@ The first 16 bytes of the NTLMv2 Response are the **NTProofStr**, an HMAC-MD5 va
 
 - **HMAC-MD5 (NTProofStr):** `5c336c6b69fd2cf7b64eb0bde3102162`
 
-![HMAC-MD5 value highlighted in the NTLMv2 response](screenshots/hmac.png)
+![HMAC-MD5 value highlighted in the NTLMv2 response](./hmac.png)
 
 ## Choosing the right hashcat mode
 
@@ -63,7 +63,7 @@ With all four fields in hand, the next question is which hashcat mode understand
 man hashcat | grep NTLM
 ```
 
-![hashcat modes for NTLM listed via man hashcat](screenshots/man_hashcat.png)
+![hashcat modes for NTLM listed via man hashcat](./man_hashcat.png)
 
 Mode **5600 (NetNTLMv2)** matches this protocol, and it expects the hash in the format:
 
@@ -81,7 +81,7 @@ hashcat -a 0 -m 5600 hash.txt /usr/share/wordlists/rockyou.txt
 
 A dictionary attack against `rockyou.txt` cracks the hash almost instantly:
 
-![hashcat recovering the password from the NetNTLMv2 hash](screenshots/password.png)
+![hashcat recovering the password from the NetNTLMv2 hash](./password.png)
 
 **Password:** `rootbeer`
 

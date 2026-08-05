@@ -14,9 +14,9 @@ Domowy lab: Kali Linux (Red Team), Ubuntu victim i Wazuh SIEM (Blue Team) w izol
 ### 🔍 Analiza ruchu sieciowego (pcap/Wireshark)
 Analiza ruchu C2, identyfikacja zainfekowanego hosta (NBNS), enumeracja użytkownika (Kerberos) i pełnych danych (SAMR QueryUserInfo).
 - [Writeup: C2 traffic & user enumeration via SAMR](traffic_analysis/2026-02-28-c2-samr-enum/writeup.html)
-
+- [Restore infected user password from NTLM servcie oveR SMB2 root-me.org](traffic_analysis/ntlm_auth/ntlm_auth.md) 
 ### 🎯 CTF / Security Wargames
-Rozwiązania wyzwań CTF i security wargames (TryHackMe i inne), z pełnymi writeupami.
+ CTF and security wargames (TryHackMe and others)
 - [Writeup: Fools Mate — bypass walidacji JS przez API (Burp Suite)](ctf_writeups/THM/fools_mate/writeup.html)
 - [Writeup: NetSec Challenge — enumeracja (Nmap, Telnet) + brute-force FTP (Hydra)](ctf_writeups/THM/NetSec/netsec_challenge_writeup.html)
 

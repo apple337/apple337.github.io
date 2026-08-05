@@ -1,0 +1,14 @@
+In this room we have to use our exploitation skill to bypass authentication mechanism on a website and get RCE - Remote Code Execution.
+
+
+So fist as always I assumed nmap is necessery to check all open ports and services on the given ip.
+
+
+After nmap with flag -sV we can check services version and os information. 
+with flag -p- we  are checking all ports open on that ip. 
+
+So after scan we got ssh services open on port 22 and apache web server on 1337 .
+We have to chace the url http://10.113.172.207:1337/
+
+so since we got no port 80 for domain we have to look for hidden directories on port 1337. i will use gobuster for it we have to find some entry. 
+We got phpmyadmin, javascript and also vendor. lets check them.   

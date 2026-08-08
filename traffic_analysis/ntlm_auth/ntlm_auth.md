@@ -5,7 +5,7 @@ categories: [network-analysis]
 source: root-me.org
 ---
 
-**Challenge:** You have been commissioned by the Cat Corporation SOC team to recover the password of a user linked to a suspicious NTLM over SMB connection.
+**Challenge:** The task by root-me.org. Source: https://www.root-me.org/en/Challenges/Network/NTLM-Authentication?lang=en You have been commissioned by the Cat Corporation SOC team to recover the password of a user linked to a suspicious NTLM over SMB connection.
 
 **Flag format:** `RM{userPrincipalName:password}`
 
